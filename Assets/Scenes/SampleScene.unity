@@ -198,6 +198,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &192532740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 192532743}
+  - component: {fileID: 192532742}
+  - component: {fileID: 192532741}
+  m_Layer: 0
+  m_Name: GeminiApi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &192532741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192532740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af2d5135eb861641b196ae165b5e82e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChatTesting
+  m_ChatModel: {fileID: 192532742}
+  userText: 
+--- !u!114 &192532742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192532740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd70ed6d511b4194fac0f8ccecc05093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChatGemini
+  url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent
+  m_Prompt: 
+  lan: English
+  m_HistoryKeepCount: 15
+  m_DataList: []
+  api_key: AQ.Ab8RN6IbISchWZha8zew_MbEz9KBe393B20UetrHPmHqBK1g-A
+  m_PromptFuncSign: 
+  m_PromptNotFuncSign: 
+  m_PromptForVision: 
+--- !u!4 &192532743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192532740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.02772, y: 0, z: -0.22509}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,3 +727,4 @@ SceneRoots:
   - {fileID: 1044884922393691295}
   - {fileID: 113730736}
   - {fileID: 619943431}
+  - {fileID: 192532743}
